@@ -1,0 +1,167 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  padding: 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 span {
+  color: #925031aa;
+}
+
+.primary-nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.primary-nav a {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: all 200ms ease-in-out;
+}
+
+.primary-nav a:hover {
+  color: #925031cc;
+}
+
+.primary-nav a.active {
+  color: #925031;
+}
+
+.main {
+  padding: 1rem;
+  padding-top: 6rem;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.product-item {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+}
+
+.product-item:hover {
+  box-shadow: 0 0 0.15rem #925031;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.product-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  transition: all 200ms ease-in-out;
+}
+
+.product-card:hover img {
+  transform: scale(1.1);
+}
+
+.product-card h2 {
+  flex: 1;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.product-card .price {
+  font-size: 1.2rem;
+}
+
+.product-title {
+  text-align: center;
+  margin-block: 1rem 2rem;
+}
+
+.product-image {
+  width: 500px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.cart-item:hover {
+  box-shadow: 0 0 0.15rem #925031;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: #925031aa;
+}
+
+li:has(.total-price) {
+  margin-top: 2rem;
+}
+
+.total-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
