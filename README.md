@@ -1,5 +1,9 @@
 # Basic React ecomm app for teaching purpose
 
+## Links
+
+- Demo: [https://basic-ecomm.onrender.com/](https://basic-ecomm.onrender.com/)
+
 ## Screenshots
 
 ![Home page](./screenshots/home-page.png)
